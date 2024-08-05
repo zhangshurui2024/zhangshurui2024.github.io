@@ -1119,15 +1119,42 @@ function createtime1() {
   var dnum = Math.floor(days);
 
   var ascll = [
-    `欢迎来到Fomalhaut🥝の小家!`,
+    `欢迎来到灵尘居🐱!`,
     `Future is now 🍭🍭🍭`,
     `
         
-███████  ██████  ███    ███  █████  ██      ██   ██  █████  ██    ██ ████████ 
-██      ██    ██ ████  ████ ██   ██ ██      ██   ██ ██   ██ ██    ██    ██    
-█████   ██    ██ ██ ████ ██ ███████ ██      ███████ ███████ ██    ██    ██    
-██      ██    ██ ██  ██  ██ ██   ██ ██      ██   ██ ██   ██ ██    ██    ██    
-██       ██████  ██      ██ ██   ██ ███████ ██   ██ ██   ██  ██████     ██   
+｀旋　　旋　　　涡　　涡涡涡　　　　　　　鸣　　　　　人
+旋旋旋　旋旋旋　　　　涡　涡　　鸣鸣鸣　鸣　鸣　　　　人
+　旋　旋　　　　涡　涡涡涡涡涡　鸣　鸣　鸣鸣鸣　　　　人
+　旋旋　旋旋旋　　　涡　涡　涡　鸣　鸣　鸣　　　　　人　人
+　旋旋　　旋旋　涡　涡　涡　涡　鸣　鸣　鸣鸣鸣　　　人　人
+旋　旋　旋旋　　涡　涡涡　涡涡　鸣鸣鸣　　　鸣　　人　　　人
+旋　旋旋　旋旋　涡　涡　　　涡　　　　　鸣　鸣　人　　　　　人
+
+　　雪雪雪　　　　　　音
+雪雪雪雪雪雪雪　　音音音音音
+雪　雪　雪　雪　　　音　音
+　　　　　　　　音音音音音音音
+　雪雪雪雪雪　　　音音音音音
+　　　　　雪　　　音　　　音
+　雪雪雪雪雪　　　音音音音音
+
+　　　中　　　　　　岛　　　　　　　敦　　敦
+中中中中中中中　　岛岛岛岛岛　　敦敦敦敦　敦敦
+中　　中　　中　　岛　　　岛　　　敦　敦敦　敦
+中　　中　　中　　岛岛岛岛岛岛　　敦敦敦敦　敦
+中中中中中中中　　　岛　　　岛　　　敦敦敦　敦
+　　　中　　　　岛　岛　岛　岛　敦敦敦　　敦
+　　　中　　　　岛岛岛岛岛　岛　　　敦　敦　敦
+
+　灵灵灵灵灵　　　　　尘　　　　　居居居居居居
+　　　　　灵　　　尘　尘　尘　　　居居居居居居
+　灵灵灵灵灵　　尘　　　　　尘　　居　　居
+　　　灵　　　　　　　尘　　　　　居居居居居居
+　灵　灵　灵　　　尘尘尘尘尘　　　居　　居
+　　灵　灵　　　　　　尘　　　　　居　居　居
+灵灵　　　灵灵　尘尘尘尘尘尘尘　居　　居居居
+
                                               
 `,
     "小站已经苟活",
@@ -2785,11 +2812,11 @@ var now = new Date();
 function createtime() {
   // 当前时间
   now.setTime(now.getTime() + 1000);
-  var start = new Date("08/01/2022 00:00:00"); // 旅行者1号开始计算的时间
+  var start = new Date("08/01/2024 00:00:00"); // 旅行者1号开始计算的时间
   var dis = Math.trunc(23400000000 + ((now - start) / 1000) * 17); // 距离=秒数*速度 记住转换毫秒
   var unit = (dis / 149600000).toFixed(6);  // 天文单位
   // 网站诞生时间
-  var grt = new Date("08/09/2022 00:00:00");
+  var grt = new Date("08/09/2024 00:00:00");
   var days = (now - grt) / 1e3 / 60 / 60 / 24,
     dnum = Math.floor(days),
     hours = (now - grt) / 1e3 / 60 / 60 - 24 * dnum,
@@ -3158,13 +3185,13 @@ let seovx = "url(https://cdn.seovx.com/?mom=302)";
 // picsum随机
 let picsum = "url(https://picsum.photos/1920/1080.webp)";
 // 小歪二次元
-// let waiDongman = "url(https://api.ixiaowai.cn/api/api.php)";
+ let waiDongman = "url(https://api.ixiaowai.cn/api/api.php)";
 //  小歪高清壁纸
 let waiBizhi = "url(https://api.ixiaowai.cn/gqapi/gqapi.php)";
 // 博天随机
 let btstu = "url(http://api.btstu.cn/sjbz/?lx=suiji)";
 // tuapi 动漫
-// let tuapi = "url(https://tuapi.eees.cc/api.php?category=dongman)";
+let tuapi = "url(https://tuapi.eees.cc/api.php?category=dongman)";
 // unsplash随机 https://source.unsplash.com/random/1920x1080/daily (weekly)
 let unsplash = "url(https://source.unsplash.com/random/1920x1080/)";
 
