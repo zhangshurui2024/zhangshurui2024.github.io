@@ -20,15 +20,6 @@
   </url>
   
   <url>
-    <loc>https://blog.lc0x0.site/tags/index.html</loc>
-    
-    <lastmod>2023-03-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.lc0x0.site/box/animation/index.html</loc>
     
     <lastmod>2023-03-22</lastmod>
@@ -38,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://blog.lc0x0.site/box/nav/index.html</loc>
+    <loc>https://blog.lc0x0.site/tags/index.html</loc>
     
     <lastmod>2023-03-22</lastmod>
     
@@ -48,6 +39,15 @@
   
   <url>
     <loc>https://blog.lc0x0.site/box/gallery/index.html</loc>
+    
+    <lastmod>2023-03-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.lc0x0.site/box/nav/index.html</loc>
     
     <lastmod>2023-03-22</lastmod>
     
