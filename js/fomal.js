@@ -3392,7 +3392,7 @@ function createWinbox() {
 
 <div class="content" style="display:flex">
   <div class="content-text" style="font-weight:bold; padding-left:10px"> 模糊效果 (消耗性能) </div><input type="checkbox" id="blur" onclick="setBlur()">
-  <div class="content-text" style="font-weight:bold; padding-left:20px"> 侧边栏 (默认开) </div><input type="checkbox" id="rightSideSet" onclick="toggleRightside()">
+  <div class="content-text" style="font-weight:bold; padding-left:20px"> 侧边栏 (默认开启) </div><input type="checkbox" id="rightSideSet" onclick="toggleRightside()">
 </div>
 
 <div class="content" style="display:flex">
@@ -3434,7 +3434,7 @@ function createWinbox() {
 <h3>1. 二次元</h3>
 <details class="folding-tag" cyan><summary> 查看二次元背景 </summary>
               <div class='content'>
-              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://lskypro.acozycotage.net/Fomalhaut/img/home_bg.webp)" class="imgbox" onclick="changeBg('url(https://lskypro.acozycotage.net/Fomalhaut/img/home_bg.webp)')"></a></div>
+              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://115.159.196.45:38306/down/IDcEe4Q4I3mh.webp)" class="imgbox" onclick="changeBg('url(https://115.159.196.45:38306/down/IDcEe4Q4I3mh.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://115.159.196.45:38306/down/r1X7jpyjAdZz.webp)" class="imgbox" onclick="changeBg('url(https://115.159.196.45:38306/down/r1X7jpyjAdZz.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://115.159.196.45:38306/down/ap9QaCwbvpRl.webp)" class="imgbox" onclick="changeBg('url(https://115.159.196.45:38306/down/ap9QaCwbvpRl.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://115.159.196.45:38306/down/EMhlfV6tjuB9.webp)" class="imgbox" onclick="changeBg('url(https://115.159.196.45:38306/down/EMhlfV6tjuB9.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://115.159.196.45:38306/down/uIsSIOuKD9Le.webp)" class="imgbox" onclick="changeBg('url(https://115.159.196.45:38306/down/uIsSIOuKD9Le.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://115.159.196.45:38306/down/oXwsuEkZcP0j.webp)" class="imgbox" onclick="changeBg('url(https://115.159.196.45:38306/down/oXwsuEkZcP0j.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://115.159.196.45:38306/down/QAsyYaXGPFj3.webp)" class="imgbox" onclick="changeBg('url(https://115.159.196.45:38306/down/QAsyYaXGPFj3.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://115.159.196.45:38306/down/08gVkzTjL8vF.webp)" class="imgbox" onclick="changeBg('url(https://115.159.196.45:38306/down/08gVkzTjL8vF.webp)')"></a></div>
               </div>
             </details>
 
