@@ -6,7 +6,7 @@
   <link href="https://blog.lc0x0.site/atom.xml" rel="self"/>
   
   <link href="https://blog.lc0x0.site/"/>
-  <updated>2022-10-23T14:00:00.000Z</updated>
+  <updated>2024-08-09T09:18:55.421Z</updated>
   <id>https://blog.lc0x0.site/</id>
   
   <author>
@@ -15,6 +15,41 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo博客部署AI摘要（TianLiGPT）教程</title>
+    <link href="https://blog.lc0x0.site/posts/c6d9a2d7.html"/>
+    <id>https://blog.lc0x0.site/posts/c6d9a2d7.html</id>
+    <published>2024-08-09T09:13:27.361Z</published>
+    <updated>2024-08-09T09:18:55.421Z</updated>
+    
+    <content type="html"><![CDATA[<h1>前言</h1><p>现在ai挺火的，给博客整个ai摘要岂不美哉？本文不算打广告哦，因为……确实挺好用的，并且有任何问题都可以很快反馈（博主亲身经历）</p><h1>什么是TianliGPT</h1><p>TianliGPT是一个基于GPT-3.5的文字摘要生成工具，你可以将需要提取摘要的文本内容发送给TianliGPT，稍等一会他就可以给你发送一个基于这段文本内容的摘要。</p><ul><li>实时生成的摘要</li><li>自动生成，无需人工干预</li><li>一次生成，再次生成无需消耗key</li><li>包含文字审核过滤，适用于中国大陆</li><li>支持中国大陆访问</li></ul><h1>部署ai摘要</h1><h2 id="引用">引用</h2><p>在博客靠后的位置位置引入js和css（需要在文章之后）</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.15.2/tianli_gpt.css&quot;</span>&gt;</span>  </span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript">  </span></span><br><span class="line"><span class="language-javascript"><span class="keyword">let</span> tianliGPT_postSelector = <span class="string">&#x27;#post #article-container&#x27;</span>;  </span></span><br><span class="line"><span class="language-javascript"><span class="keyword">let</span> tianliGPT_key = <span class="string">&#x27;5Q5mpqRK5DkwT1X9Gi5e&#x27;</span>;  </span></span><br><span class="line"><span class="language-javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span>  </span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.15.2/tianli_gpt.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure><p>如果你使用的是Butterfly主题，可以在主题文件夹下的themes/butterfly/_config.yml文件中的inject属性中配置：</p><figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">inject:  </span><br><span class="line"> <span class="built_in"> head</span>:  </span><br><span class="line">  - <span class="language-xml"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.15.2/tianli_gpt.css&quot;</span>&gt;</span>  </span></span><br><span class="line"><span class="language-xml">  bottom:  </span></span><br><span class="line"><span class="language-xml">  - </span><span class="language-xml"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"><span class="keyword">let</span> tianliGPT_postSelector = <span class="string">&#x27;\#post \#article-container&#x27;</span>;<span class="keyword">let</span> tianliGPT_key = <span class="string">&#x27;5Q5mpqRK5DkwT1X9Gi5e&#x27;</span>;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><span class="language-xml">  </span></span><br><span class="line"><span class="language-xml">- </span><span class="language-xml"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.15.2/tianli_gpt.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure><p>我们需要更改一些参数来让这个模型运作起来。</p><p>tianliGPT_postSelector和tianliGPT_key</p><h2 id="tianliGPT-postSelector">tianliGPT_postSelector</h2><p>这个参数是填写你的博客文章所在的元素属性的选择器，在生成提交的文本时，只会将这个选择器对应的元素内的文本进行提交，并且在这个选择器对应的元素上放插入AI摘要。如果你使用的是Butterfly主题，那么为#post #article-container。</p><p>这里列出一些常见博客主题的选择器值：</p><p><a href="https://picst.sunbangyan.cn/2023/11/24/448b4c69c6782f59f4e6e5370ecacb06.jpeg"><img src="https://picst.sunbangyan.cn/2023/11/24/448b4c69c6782f59f4e6e5370ecacb06.jpeg" alt="示例"></a></p><h2 id="tianliGPT-key">tianliGPT_key</h2><p>到<a href="https://afdian.net/item/f18c2e08db4411eda2f25254001e7c00">爱发电</a>中购买，原价10元5万字符（Heo限量限时折扣9元）。请求过的内容再次请求不会消耗key，可以无限期使用。</p><p>购买完成后，进入管理后台：<a href="https://summary.zhheo.com/">https://summary.zhheo.com/</a></p><p>登录后点击右上角的“添加新网站”，输入密钥即可</p><p>即可绑定成功。</p><p>参考链接： <a href="https://blog.zhheo.com/p/ec57d8b2.html">https://blog.zhheo.com/p/ec57d8b2.html</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1&gt;前言&lt;/h1&gt;
+&lt;p&gt;现在ai挺火的，给博客整个ai摘要岂不美哉？本文不算打广告哦，因为……确实挺好用的，并且有任何问题都可以很快反馈（博主亲身经历）&lt;/p&gt;
+&lt;h1&gt;什么是TianliGPT&lt;/h1&gt;
+&lt;p&gt;TianliGPT是一个基于GPT-3.5的文字摘要生成工具，</summary>
+      
+    
+    
+    
+    <category term="教程" scheme="https://blog.lc0x0.site/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="HEXO" scheme="https://blog.lc0x0.site/categories/HEXO/"/>
+    
+    <category term="AI" scheme="https://blog.lc0x0.site/categories/AI/"/>
+    
+    
+    <category term="教程" scheme="https://blog.lc0x0.site/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="HEXO" scheme="https://blog.lc0x0.site/tags/HEXO/"/>
+    
+    <category term="AI" scheme="https://blog.lc0x0.site/tags/AI/"/>
+    
+  </entry>
   
   <entry>
     <title>Markdown语法与外挂标签写法汇总</title>
