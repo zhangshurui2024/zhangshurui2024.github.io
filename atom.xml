@@ -6,7 +6,7 @@
   <link href="https://blog.lc0x0.site/atom.xml" rel="self"/>
   
   <link href="https://blog.lc0x0.site/"/>
-  <updated>2024-08-09T09:18:55.421Z</updated>
+  <updated>2024-08-09T10:23:52.046Z</updated>
   <id>https://blog.lc0x0.site/</id>
   
   <author>
@@ -15,6 +15,51 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>编程笔记本</title>
+    <link href="https://blog.lc0x0.site/posts/a05ea0d9.html"/>
+    <id>https://blog.lc0x0.site/posts/a05ea0d9.html</id>
+    <published>2024-08-09T10:02:43.899Z</published>
+    <updated>2024-08-09T10:23:52.046Z</updated>
+    
+    <content type="html"><![CDATA[<h1><strong>编程笔记本-备忘录</strong></h1><h3 id="本文章将保持更新，记录站主在各个方面中所遇到的一些事情并记录编程时遇到的一些难题和卡脖子问题，小伙伴们如果也有问题可以在评论区留言，站主有空时会一一回复哦！">本文章将保持更新，记录站主在各个方面中所遇到的一些事情并记录编程时遇到的一些难题和卡脖子问题，小伙伴们如果也有问题可以在评论区留言，站主有空时会一一回复哦！</h3><hr><h2 id="待更新中…📌"><em><strong>待更新中…📌</strong></em></h2>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1&gt;&lt;strong&gt;编程笔记本-备忘录&lt;/strong&gt;&lt;/h1&gt;
+&lt;h3 id=&quot;本文章将保持更新，记录站主在各个方面中所遇到的一些事情并记录编程时遇到的一些难题和卡脖子问题，小伙伴们如果也有问题可以在评论区留言，站主有空时会一一回复哦！&quot;&gt;本文章将保持更新，记录站主在各个</summary>
+      
+    
+    
+    
+    <category term="教程" scheme="https://blog.lc0x0.site/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="AI" scheme="https://blog.lc0x0.site/categories/AI/"/>
+    
+    <category term="演示" scheme="https://blog.lc0x0.site/categories/%E6%BC%94%E7%A4%BA/"/>
+    
+    <category term="日常" scheme="https://blog.lc0x0.site/categories/%E6%97%A5%E5%B8%B8/"/>
+    
+    <category term="编程笔记本" scheme="https://blog.lc0x0.site/categories/%E7%BC%96%E7%A8%8B%E7%AC%94%E8%AE%B0%E6%9C%AC/"/>
+    
+    <category term="编程记录" scheme="https://blog.lc0x0.site/categories/%E7%BC%96%E7%A8%8B%E8%AE%B0%E5%BD%95/"/>
+    
+    
+    <category term="教程" scheme="https://blog.lc0x0.site/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="AI" scheme="https://blog.lc0x0.site/tags/AI/"/>
+    
+    <category term="日常" scheme="https://blog.lc0x0.site/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+    <category term="编程笔记本" scheme="https://blog.lc0x0.site/tags/%E7%BC%96%E7%A8%8B%E7%AC%94%E8%AE%B0%E6%9C%AC/"/>
+    
+    <category term="编程记录" scheme="https://blog.lc0x0.site/tags/%E7%BC%96%E7%A8%8B%E8%AE%B0%E5%BD%95/"/>
+    
+    <category term="演示" scheme="https://blog.lc0x0.site/tags/%E6%BC%94%E7%A4%BA/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo博客部署AI摘要（TianLiGPT）教程</title>
