@@ -42,11 +42,11 @@
       
       <categories>
           
+          <category> AI </category>
+          
           <category> butterfly </category>
           
           <category> HEXO </category>
-          
-          <category> AI </category>
           
           <category> 借鉴 </category>
           
@@ -55,9 +55,9 @@
       
         <tags>
             
-            <tag> HEXO </tag>
-            
             <tag> AI </tag>
+            
+            <tag> HEXO </tag>
             
             <tag> 借鉴 </tag>
             
@@ -79,11 +79,11 @@
       
       <categories>
           
+          <category> AI </category>
+          
           <category> 教程 </category>
           
           <category> 演示 </category>
-          
-          <category> AI </category>
           
           <category> 日常 </category>
           
@@ -96,9 +96,9 @@
       
         <tags>
             
-            <tag> 教程 </tag>
-            
             <tag> AI </tag>
+            
+            <tag> 教程 </tag>
             
             <tag> 日常 </tag>
             
@@ -124,22 +124,22 @@
       
       <categories>
           
+          <category> AI </category>
+          
           <category> 教程 </category>
           
           <category> HEXO </category>
-          
-          <category> AI </category>
           
       </categories>
       
       
         <tags>
             
+            <tag> AI </tag>
+            
             <tag> 教程 </tag>
             
             <tag> HEXO </tag>
-            
-            <tag> AI </tag>
             
         </tags>
       
