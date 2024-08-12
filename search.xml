@@ -42,11 +42,11 @@
       
       <categories>
           
+          <category> HEXO </category>
+          
           <category> AI </category>
           
           <category> butterfly </category>
-          
-          <category> HEXO </category>
           
           <category> 借鉴 </category>
           
@@ -81,9 +81,9 @@
           
           <category> 教程 </category>
           
-          <category> AI </category>
-          
           <category> 演示 </category>
+          
+          <category> AI </category>
           
           <category> 日常 </category>
           
@@ -126,9 +126,9 @@
           
           <category> 教程 </category>
           
-          <category> AI </category>
-          
           <category> HEXO </category>
+          
+          <category> AI </category>
           
       </categories>
       
